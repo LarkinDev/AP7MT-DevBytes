@@ -19,6 +19,7 @@ package com.example.android.devbyteviewer.database
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.example.android.devbyteviewer.domain.DevByteVideo
+import com.example.android.devbyteviewer.network.NetworkVideoContainer
 
 @Entity
 data class DatabaseVideo constructor(
@@ -43,3 +44,16 @@ fun List<DatabaseVideo>.asDomainModel(): List<DevByteVideo> {
  * Database entities go in this file. These are responsible for reading and writing from the
  * database.
  */
+/**
+ * Convert Network results to database objects
+ */
+fun NetworkVideoContainer.asDatabaseModel(): List<DatabaseVideo> {
+    return videos.map {
+        DatabaseVideo(
+            title = it.title,
+            description = it.description,
+            url = it.url,
+            updated = it.updated,
+            thumbnail = it.thumbnail)
+    }
+}
