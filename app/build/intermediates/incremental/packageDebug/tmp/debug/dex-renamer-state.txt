@@ -1,4 +1,4 @@
-#Wed Dec 08 18:13:58 CET 2021
+#Wed Dec 08 18:47:02 CET 2021
 base.2=C\:\\Users\\mihai\\Desktop\\CZ\\Mob_tech\\AP7MT-DevBytes\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\classes2.dex
 path.2=classes2.dex
 base.1=C\:\\Users\\mihai\\Desktop\\CZ\\Mob_tech\\AP7MT-DevBytes\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\classes.dex
